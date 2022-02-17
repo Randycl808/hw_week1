@@ -87,21 +87,30 @@ const characters = [
 
 //3. Get total number of characters by eye color-------------------------------------
 
-let sum = characters.reduce((accum, characterEye)=>{
-       console.log('eyeColor:', characterEye.eye_color)
-       return accum + characterEye.eye_color
-   },0)
-   console.log('return of reduce')
-   console.log(sum)
+// let sum = characters.reduce((accum, characterEye)=>{
+//        if(characterEye.eye_color === 'brown'){
+//          accum.brown +=1
+//          return accum
+//        }
+//        else if(characterEye.eye_color === 'blue'){
+//         accum.blue +=1
+//         return accum
+//       }
+//       else if(characterEye.eye_color === 'yellow'){
+//         accum.yellow +=1
+//         return accum
+//       }
+//     }, {brown:0, blue:0, yellow:0})
+//     console.log (sum)
 
 //4. Get total number of characters in all the character names----------------------------------------
 
-// let sum = characters.reduce((accum, characterCount)=>{
-//   console.log('nameTotal:', characterCount.name)
-//   return accum + characterCount.name
-// },0)
-// console.log('return of reduce')
-// console.log(sum)
+let sum = characters.reduce((accum, characterCount)=>{
+  console.log('nameTotal:', characterCount.name)
+  return accum + characterCount.name
+},0)
+console.log('return of reduce')
+console.log(sum)
 
 
 

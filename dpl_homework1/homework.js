@@ -59,7 +59,7 @@ if(isOdd(6)){
     console.log('is Odd')
 } else {
     console.log('is Even')
-}
+} 
 
 
 
@@ -98,9 +98,9 @@ function numOfVowels(string) {
         count+= 1;
       }
     }
-    console.log
-
-
+    return count
+  }
+console.log(numOfVowels('DevPointLabs'))
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
 //------------------------------------------------------------------------------
 
