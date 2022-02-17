@@ -85,22 +85,42 @@ if(isOdd(6)){
 
 // Functions
 // 1. Write a function that takes a positive number and prints all even numbers from 0 – number
+
+// const count = (num)=>{
+//   for(let i = 0; i<= num; i++){
+//       if(i %2 == 0){
+//       console.log(i)
+//       }
+//   }
+// }
+// count(24)
+
 // 2. Write a function that takes an array and returns the sum of all the numbers
+
+// const array = [1, 5, 10, 20, 40];
+// let sum = 0;
+
+// for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+// }
+// console.log(sum);
+
 // 3. Write a function that returns the number of vowels in string
 //------------------------------------------------------------------------------
 
 
-function numOfVowels(string) {
-    let count = 0;
+// function numOfVowels(string) {
+//     let count = 0;
   
-    for (let i = 0; i < string.length; i++) {
-      if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u'){
-        count+= 1;
-      }
-    }
-    return count
-  }
-console.log(numOfVowels('DevPointLabs'))
+//     for (let i = 0; i < string.length; i++) {
+//       if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u'){
+//         count+= 1;
+//       }
+//     }
+//     return count
+//   }
+// console.log(numOfVowels('DevPointLabs'))
+
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
 //------------------------------------------------------------------------------
 
@@ -114,7 +134,15 @@ console.log(numOfVowels('DevPointLabs'))
 // 6. write a function that takes a person object {firstname: 'joe', lastname: 'shmoe', age: 50} and returns a formatted string "joe shmoe is 50 years old"
 //------------------------------------------------------------------------------
 
+// let randy = {name: "Randy Clements", age: 23};
+// let tami = {name: "Tami Clements", age: 62};
+// let tori = {name: "Tori Clements",age: 26};
+// let tiana = {name: "Tiana Clements", age: 34};
 
+// console.log(randy.name + " is " + randy.age + " years old!");
+// console.log(tami.name + " is " + tami.age + " years old!");
+// console.log(tiana.name + " is " + tiana.age + " years old!");
+// console.log(tori.name + " is " + tori.age + " years old!");
 
 // 7. write a function that takes an array that removes the first and last items and return that new array
 //------------------------------------------------------------------------------

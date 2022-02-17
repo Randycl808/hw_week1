@@ -105,12 +105,12 @@ const characters = [
 
 //4. Get total number of characters in all the character names----------------------------------------
 
-let sum = characters.reduce((accum, characterCount)=>{
-  console.log('nameTotal:', characterCount.name)
-  return accum + characterCount.name
-},0)
-console.log('return of reduce')
-console.log(sum)
+// let characterNumber = characters.reduce((accum, c)=>{
+//   let numberChara = c.name.length-1
+//   return accum + numberChara
+// },0)
+
+// console.log(characterNumber)
 
 
 
@@ -152,7 +152,16 @@ console.log(sum)
 
 //3. Sort by name---------------------------------------------------------
 
-
+// characters.sort((a,b)=>{
+//   if(a.name > b.name){
+//       return 1
+//   }
+//   if(a.name < b.name){
+//       return -1
+//   }
+//   return 0
+// })
+// console.log(characters)
 
 //4. Sort by gender---------------------------------------------------------
 
