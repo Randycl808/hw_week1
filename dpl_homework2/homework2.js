@@ -134,21 +134,48 @@ const characters = [
 //3. Get all male characters------------------------------------------------------
 
 // let genderChar = characters.filter((c)=>{
-//   return c.gender = 'male'
+//   return c.gender === 'male'
 // })
 // console.log('return of filter')
 // console.log(genderChar)
 
 //4. Get all female characters---------------------------------------------------------
 
+// let genderChar = characters.filter((c)=>{
+//   return c.gender === 'female'
+// })
+// console.log('return of filter')
+// console.log(genderChar)
+
 //***SORT***
 //1. Sort by mass---------------------------------------------------------
 
+// characters.sort((a,b)=>{
+//   if(a.mass > b.mass){
+//       return 1
+//   }
+//   if(a.mass < b.mass){
+//       return -1
+//   }
+//   return 0
+// })
+
+// console.log(characters)
 
 
 //2. Sort by height---------------------------------------------------------
 
+// characters.sort((a,b)=>{
+//   if(a.height > b.height){
+//       return 1
+//   }
+//   if(a.height < b.height){
+//       return -1
+//   }
+//   return 0
+// })
 
+// console.log(characters)
 
 //3. Sort by name---------------------------------------------------------
 
@@ -165,6 +192,17 @@ const characters = [
 
 //4. Sort by gender---------------------------------------------------------
 
+// characters.sort((a,b)=>{
+//   if(a.gender > b.gender){
+//       return 1
+//   }
+//   if(a.gender < b.gender){
+//       return -1
+//   }
+//   return 0
+// })
+
+// console.log(characters)
 
 
 //***Bonus***/

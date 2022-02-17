@@ -147,11 +147,25 @@ if(isOdd(6)){
 // 7. write a function that takes an array that removes the first and last items and return that new array
 //------------------------------------------------------------------------------
 
+// let remove1 = (arr)=>{
+//     const cloneArr = [...arr]
+//     shift(cloneArr)
+//     return cloneArr
+// }
 
+// let remove2 = (arr)=>{
+//     const cloneArr = [...arr]
+//     pop (cloneArr)
+//     return cloneArr
+// }
+
+// let nums = [1,2,3,4,5,6]
+// let swapedNums = swap1(nums)
+// console.log ('nums:', nums)
+// console.log ('swapedNums:' , swapedNums)
 
 // 8. write a function that swaps the last and first items of an array 
 //------------------------------------------------------------------------------
-
 
 
 // 9. write a function that takes a array and a second argument and returns the index in the array of the second argument
@@ -166,3 +180,12 @@ if(isOdd(6)){
 
 // 11. Write a function that prints all  numbers from 0 – 10
 //-----------------------------------------------------------------------------
+
+// const upTo10 = (num)=>{
+//     for(let x = 0; x<= num; x++){
+//         console.log(x)
+//         }
+//     }
+  
+//   upTo10(10)
+  
