@@ -56,6 +56,14 @@ const characters = [
 
 //  console.log(returnValueMap)
 
+ //Name,height & weight
+ 
+//  let returnHeiMassNam= characters.map ((c)=> {
+//   return {height: c.height , name: c.name, mass: c.mass}
+// })
+
+// console.log(returnHeiMassNam)
+
 //4. Get array of all first names--------------------------------------------
 
   // let returnValueMap= characters.map ((c)=> {
@@ -63,6 +71,14 @@ const characters = [
   // })
 
   // console.log(returnValueMap)
+
+  // //lastname
+
+  // let returnLastName= characters.map ((c)=> {
+  //   return {name: c.name.split(' ')[1]}
+  // })
+
+  // console.log(returnLastName)
 
 //***REDUCE***
 //1. Get total mass of all characters-------------------------------------------
@@ -84,6 +100,7 @@ const characters = [
   // },0)
   // console.log('return of reduce')
   // console.log(sum)
+
 
 //3. Get total number of characters by eye color-------------------------------------
 
@@ -123,13 +140,31 @@ const characters = [
 // console.log('return of filter')
 // console.log(allOver100)
 
+
+
+// //Under 100
+// let allUnder100 = characters.filter((c)=>{
+//   return c.mass <= 100
+// })
+// console.log('return of filter')
+// console.log(allUnder100)
+
+
 //2. Get characters with height less than 200----------------------------------------
 
 // let allUnder200 = characters.filter((c)=>{
-//   return c.mass <= 200
+//   return c.height <= 200
 // })
 // console.log('return of filter')
 // console.log(allUnder200)
+
+// //Over200
+// let allOver200 = characters.filter((c)=>{
+//   return c.height >= 200
+// })
+// console.log('return of filter')
+// console.log(allOver200)
+
 
 //3. Get all male characters------------------------------------------------------
 
@@ -146,6 +181,14 @@ const characters = [
 // })
 // console.log('return of filter')
 // console.log(genderChar)
+
+// //Male sort @ same time
+
+// let genderChar1 = characters.filter((c)=>{
+//   return c.gender === 'male'
+// })
+// console.log('return of filter male')
+// console.log(genderChar1)
 
 //***SORT***
 //1. Sort by mass---------------------------------------------------------
@@ -166,10 +209,10 @@ const characters = [
 //2. Sort by height---------------------------------------------------------
 
 // characters.sort((a,b)=>{
-//   if(a.height > b.height){
+//   if(a.height < b.height){
 //       return 1
 //   }
-//   if(a.height < b.height){
+//   if(a.height > b.height){
 //       return -1
 //   }
 //   return 0
@@ -211,15 +254,37 @@ const characters = [
 
 //***EVERY***
 //1. Does every character have blue eyes?
-//2. Does every character have mass more than 40?
-//3. Is every character shorter than 200?
-//4. Is every character male?
 
-//***SOME***
-//1. Is there at least one male character?
-//2. Is there at least one character with blue eyes?
-//3. Is there at least one character taller than 210?
-//4. Is there at least one character that has mass less than 50?
+// const c = characters.every((c)=>{
+//   c.eye_color === 'blue'
+// }
+// )
+// console.log(c)
+
+//2. Does every character have mass more than 40?
+const f = characters.every((f)=>{
+  f.massOver40 >= 40
+})
+console.log(f)
+
+// //3. Is every character shorter than 200?
+// const d = characters.every((d)=>{
+//   d.shorter_than200 <= 200
+// })
+// console.log(d)
+// console.log(d)
+//4. Is every character male?
+// const cMales = characters.every((cMales)=>{
+//   cMales.genderM === 'male'
+// })
+// console.log (cMales)
+// ***SOME***
+// 1. Is there at least one male character?
+// 2. Is there at least one character with blue eyes?
+
+
+// 3. Is there at least one character taller than 210?
+// 4. Is there at least one character that has mass less than 50?
 
 //***Bonus***/
 // come up with your own

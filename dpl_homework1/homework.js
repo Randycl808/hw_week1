@@ -130,29 +130,29 @@ if(isOdd(6)){
 // 4. Write a function that takes a math operator, as a string, ('*','/','+','-') and two numbers and returns the result
 //------------------------------------------------------------------------------
 
-// const calculator = (opp, num1, num2) =>{
-//     if (opp ==='+') {
-//         return num1 + num2
-//     }
-//     else if (opp ==='-') {
-//         return num1 - num2
-//     }
-//     else if (opp ==='*') {
-//         return num1 * num2
-//     }
-//     else if (opp ==='/') {
-//         return num1 / num2
-//     }
-//     else if (opp ==='%') {           //BONUS :)
-//         return num1 % num2
-//     }
-// }
-// console.log(calculator('+', 25, 5))
-// console.log(calculator('-', 1028373, 10000))
-// console.log(calculator('*', 25, 5))
-// console.log(calculator('/', 100, 10))
-// console.log(calculator('%', 25, 5))
-// console.log(calculator('+', 1028373, 10000))
+const calculator = (opp, num1, num2) =>{
+    if (opp ==='+') {
+        return num1 + num2
+    }
+    else if (opp ==='-') {
+        return num1 - num2
+    }
+    else if (opp ==='*') {
+        return num1 * num2
+    }
+    else if (opp ==='/') {
+        return num1 / num2
+    }
+    else if (opp ==='%') {           //BONUS :)
+        return num1 % num2
+    }
+}
+console.log(calculator('+', 25, 5))
+console.log(calculator('-', 1028373, 10000))
+console.log(calculator('*', 25, 5))
+console.log(calculator('/', 100, 10))
+console.log(calculator('%', 25, 5))
+console.log(calculator('+', 1028373, 10000))
 
 // 5. Write a function that takes an array of strings and a string and returns true or false if the string is in the array.
 //------------------------------------------------------------------------------
